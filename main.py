@@ -28,10 +28,10 @@ def make_turn():
 def is_there_a_winner():
     for win in winning_combinations:
         if win.issubset(x_moves):
-            print(f"Игрок X победил!")
+            print("Игрок X победил!")
             return True
         elif win.issubset(o_moves):
-            print(f"Игрок O победил!")
+            print("Игрок O победил!")
             return True
 
     if legal_moves == []:
